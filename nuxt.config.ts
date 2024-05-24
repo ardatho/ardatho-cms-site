@@ -5,16 +5,21 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   extends: [
     '@nuxt/ui-pro',
-    '../base_manager_site_modules/modules/core',
+    '../cms_site_modules/modules/core',
   ],
   modules: [
     '@nuxt/ui',
-    ['../base_manager_site_modules/modules/crud/src/', globalConfig.modules.crud]
+    ['../cms_site_modules/modules/crud/src/', globalConfig.modules.crud]
   ],
   apollo: {
     clients: {
       default: {
         httpEndpoint: 'http://localhost:4000',
+        httpLinkOptions: {
+          headers: {
+            coucou: 'Hello',
+          }
+        }
       }
     },
   },
