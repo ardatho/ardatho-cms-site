@@ -61,17 +61,17 @@ export default {
         {
           value: 1,
           text: 'generic.online',
-          color: 'success',
+          color: 'green',
         },
         {
           value: 2,
           text: 'user.pending',
-          color: 'warning',
+          color: 'grey',
         },
         {
           value: 0,
           text: 'generic.offline',
-          color: 'grey lighten-2',
+          color: 'red',
         },
       ],
       fetch: {

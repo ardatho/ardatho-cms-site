@@ -75,7 +75,7 @@ export default {
       international: true,
       col: 'col-12',
       display: {
-        edit: false,
+        edit: true,
       },
       props: {
         table: true,
@@ -110,6 +110,7 @@ export default {
           editRows: false,
           deleteRows: true,
           addRows: true,
+          toEditRows: true,
         },
       }
     },
