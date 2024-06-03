@@ -1,5 +1,4 @@
 import sections from '../global/sections';
-import customclassRelation from '../global/customclassRelation';
 
 export default {
   id: 'pages',
@@ -21,13 +20,7 @@ export default {
     title: 'page.pages',
     icon: 'insert_drive_file',
   },
-  submodules: [
-    {
-      id: 'pages.customclasses',
-      title: 'customclass.customclasses',
-      path: '/customclasses'
-    }
-  ],
+  submodules: [],
   treeview: true,
   treeviewMaxLevel: 4,
   rankable: true,
@@ -149,7 +142,6 @@ export default {
         counter: 140,
       },
     },
-    { ...customclassRelation, groupkey: 'info' },
     sections,
     {
       key: 'parents',

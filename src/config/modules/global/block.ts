@@ -1,5 +1,3 @@
-import customclassRelation from './customclassRelation';
-
 export default {
   key: 'blocks',
   groupkey: 'content',
@@ -160,7 +158,6 @@ export default {
           add: true,
         },
       },
-      { ...customclassRelation, idSingularParent: 'block'},
       {
         key: 'contentblocks',
         label: 'contentblock.contentblocks',
@@ -434,7 +431,6 @@ export default {
                 add: ['button'],
               },
             },
-            { ...customclassRelation, idSingularParent: 'contentblock'},
           ],
           actions: {
             editRows: true,

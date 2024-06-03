@@ -1,5 +1,3 @@
-import customclassRelation from './customclassRelation';
-
 export default {
   key: 'sections',
   type: 'relations',
@@ -182,7 +180,6 @@ export default {
           treeview: true,
         },
       },
-      { ...customclassRelation, idSingularParent: 'section'},
       {
         key: 'rows',
         type: 'children',
@@ -318,7 +315,6 @@ export default {
               listing: true,
             },
           },
-          { ...customclassRelation, idSingularParent: 'row'},
           {
             key: 'columns',
             type: 'children',
@@ -405,7 +401,6 @@ export default {
                   listing: true,
                 },
               },
-              { ...customclassRelation, idSingularParent: 'column'},
               {
                 key: 'blocks',
                 type: 'children',
@@ -597,7 +592,6 @@ export default {
                       add: true,
                     },
                   },
-                  { ...customclassRelation, idSingularParent: 'block'},
                   {
                     key: 'contentblocks',
                     label: 'contentblock.contentblocks',
@@ -887,13 +881,6 @@ export default {
                           display: {
                             edit: ['button'],
                             add: ['button'],
-                          },
-                        },
-                        {
-                          ...customclassRelation,
-                          idSingularParent: 'contentblock',
-                          display: {
-                            edit: ['image', 'video', 'html', 'button'],
                           },
                         },
                       ],
